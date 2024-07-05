@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="WXP"
+                android:text="@string/application_name"
                 android:textColor="@color/design_default_color_primary"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -50,7 +50,7 @@
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
 
-                        android:text="Application 1" />
+                        android:text="@string/tip_calculator" />
 
                     <Button
                         android:id="@+id/ButtonApplication2"
@@ -59,7 +59,7 @@
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
 
-                        android:text="Application 2" />
+                        android:text="@string/quote_gen" />
 
                 </LinearLayout>
 
@@ -76,7 +76,7 @@
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
 
-                        android:text="Application 3" />
+                        android:text="@string/Counter" />
 
                     <Button
                         android:id="@+id/ButtonApplication4"
@@ -85,7 +85,7 @@
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
 
-                        android:text="Application 4" />
+                        android:text="@string/Unit_convertor" />
 
                 </LinearLayout>
             </LinearLayout>

@@ -11,7 +11,7 @@
         android:id="@+id/editTextBillAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Bill Amount"
+        android:hint="@string/bill_calculated"
         android:inputType="numberDecimal"
         android:minHeight="48dp"/>
 
@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Tip Percentage:"
+        android:text="@string/tip_percentage_selection"
         android:textSize="18sp"
         android:gravity="center"
         android:paddingTop="16dp"/>
@@ -34,25 +34,25 @@
             android:id="@+id/radioButton10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10%" />
+            android:text="@string/ten_percentage" />
 
         <RadioButton
             android:id="@+id/radioButton15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="15%" />
+            android:text="@string/fifteen_percentage" />
 
         <RadioButton
             android:id="@+id/radioButton20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="20%" />
+            android:text="@string/twenty_percentage" />
 
         <RadioButton
             android:id="@+id/radioButtonCustom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Custom"
+            android:text="@string/custom_tip_input"
             android:checked="true" />
 
     </RadioGroup>
@@ -61,7 +61,7 @@
         android:id="@+id/editTextCustomTip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter custom tip %"
+        android:hint="@string/custom_tip_input"
         android:inputType="numberDecimal"
         android:visibility="gone"
         android:textSize="18sp"/>
@@ -70,13 +70,13 @@
         android:id="@+id/buttonCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate" />
+        android:text="@string/calculate_button" />
 
     <TextView
         android:id="@+id/textViewTipAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tip Amount: $0.00"
+        android:text="@string/tip_calculated"
         android:textSize="18sp"
         android:gravity="center"
         android:paddingTop="16dp"/>
@@ -85,7 +85,7 @@
         android:id="@+id/textViewTotalAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total Amount: $0.00"
+        android:text="@string/bill_calculated"
         android:textSize="18sp"
         android:gravity="center"
         android:paddingTop="8dp"/>
