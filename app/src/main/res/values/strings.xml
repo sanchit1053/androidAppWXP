@@ -5,4 +5,14 @@
     <string name="login_button_cd">Login button</string>
     <string name="welcome_textview_cd">Welcome message</string>
 
+    <!-- Counter app strings -->
+    <string name="defaultMsg">Current value of counter: </string>
+    <string name="increase">Increase</string>
+    <string name="decrease">Decrease</string>
+    <string name="counter">Counter</string>
+    <string name="zero">0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
