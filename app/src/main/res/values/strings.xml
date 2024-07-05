@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">SignIn Application</string>
-    <string name="username_edittext_cd">Username field</string>
-    <string name="password_edittext_cd">Password field</string>
+    <string name="app_name" translatable="false">SignIn Application</string>
+    <string name="username_edittext_cd" translatable="false">Username field</string>
+    <string name="password_edittext_cd" translatable="false">Password field</string>
     <string name="login_button_cd">Login button</string>
     <string name="welcome_textview_cd">Welcome message</string>
     <string name="tip_calculated">Tip Amount: $</string>
@@ -17,14 +17,13 @@
     <string name="quote_gen">Quote Generator</string>
     <string name="quote_gen_desc">Click the button below to generate a random quote</string>
     <string name="quote_gen_command">Generate Quote</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="password" translatable="false">Password</string>
     <string name="login">Login</string>
     <string name="tip_calculator">Tip Calculator</string>
     <string name="Counter">Counter</string>
     <string name="Unit_convertor">Unit Convertor</string>
     <string name="application_name">WPX 2.0</string>
-
-
-
+    <string name="invalid_username">Invalid username or password</string>
+    <string name="welcome">Welcome</string>
 </resources>
