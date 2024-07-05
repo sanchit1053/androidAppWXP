@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SignIn Application</string>
+    <string name="username_edittext_cd">Username field</string>
+    <string name="password_edittext_cd">Password field</string>
+    <string name="login_button_cd">Login button</string>
+    <string name="welcome_textview_cd">Welcome message</string>
+
+</resources>
