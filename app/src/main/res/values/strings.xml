@@ -4,5 +4,27 @@
     <string name="password_edittext_cd">Password field</string>
     <string name="login_button_cd">Login button</string>
     <string name="welcome_textview_cd">Welcome message</string>
+    <string name="tip_calculated">Tip Amount: $</string>
+    <string name="bill_calculated">Total Bill Amount: $</string>
+    <string name="bill_amount">Enter Bill Amount</string>
+    <string name="tip_percentage_selection">Select Tip Percentage:</string>
+    <string name="ten_percentage">10%</string>
+    <string name="fifteen_percentage">20%</string>
+    <string name="twenty_percentage">30%</string>
+    <string name="custom_tip_input">Enter custom tip %</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="Total_amount">Total Amount: $0.00</string>
+    <string name="quote_gen">Quote Generator</string>
+    <string name="quote_gen_desc">Click the button below to generate a random quote</string>
+    <string name="quote_gen_command">Generate Quote</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="tip_calculator">Tip Calculator</string>
+    <string name="Counter">Counter</string>
+    <string name="Unit_convertor">Unit Convertor</string>
+    <string name="application_name">WPX 2.0</string>
+
+
 
 </resources>

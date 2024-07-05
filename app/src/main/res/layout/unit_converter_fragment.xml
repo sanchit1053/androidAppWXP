@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="90dp"
         android:layout_marginVertical="50dp"
-        android:text="Unit Converter"
+        android:text="@string/Unit_convertor"
         android:textColor="#d84242"
         android:textSize="50sp" />
 
