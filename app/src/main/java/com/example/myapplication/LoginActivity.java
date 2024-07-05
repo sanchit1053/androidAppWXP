@@ -1,4 +1,5 @@
 package com.example.myapplication; // Replace with your package name
+// random gibberish
 
 import android.content.Intent;
 import android.os.Bundle;
