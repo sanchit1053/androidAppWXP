@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SignIn Application</string>
+    <string name="username_edittext_cd">Enter username</string>
+    <string name="password_edittext_cd">Enter password</string>
+    <string name="login_button_cd">Tap to login</string>
+
+</resources>
