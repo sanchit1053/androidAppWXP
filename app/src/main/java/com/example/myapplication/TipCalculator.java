@@ -43,6 +43,12 @@ public class TipCalculator extends Fragment {
         textViewTotalAmount = view.findViewById(R.id.textViewTotalAmount);
         editTextCustomTip = view.findViewById(R.id.editTextCustomTip);
 
+        editTextBillAmount.setContentDescription(getString(R.string.bill_amount_cd));
+        buttonCalculate.setContentDescription(getString(R.string.button_calculate_cd));
+        radioGroupTipPercentage.announceForAccessibility("Select any tip percentage");
+
+
+
         radioGroupTipPercentage.check(R.id.radioButton10);
         tipPercentage = 10.0;
         editTextCustomTip.setVisibility(View.GONE);
@@ -74,7 +80,8 @@ public class TipCalculator extends Fragment {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.radioButton10) {
                     tipPercentage = 10.0;
-                    editTextCustomTip.setVisibility(View.GONE); // Hide EditText
+                    editTextCustomTip.setVisibility(View.GONE);// Hide EditText
+
                 } else if (checkedId == R.id.radioButton15) {
                     tipPercentage = 15.0;
                     editTextCustomTip.setVisibility(View.GONE); // Hide EditText
@@ -114,7 +121,8 @@ public class TipCalculator extends Fragment {
 
         DecimalFormat df = new DecimalFormat("#.##"); // Format to two decimal places
 
+        textViewTipAmount.announceForAccessibility("Your tip amount is " + tipAmount + "dollar" + "Your total bill amount is " + totalAmount + "dollar");
         textViewTipAmount.setText("Tip Amount: $ " + df.format(tipAmount));
-        textViewTotalAmount.setText("Tip Amount: $ "+ df.format(totalAmount));
+        textViewTotalAmount.setText("Total Bill Amount: $ "+ df.format(totalAmount));
     }
 }

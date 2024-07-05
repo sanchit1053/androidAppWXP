@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">J2A</string>
-    <string name="username_edittext_cd">Username field</string>
-    <string name="password_edittext_cd">Password field</string>
+    <string name="username_edittext_cd">Enter username</string>
+    <string name="password_edittext_cd">Enter password</string>
+    <string name="bill_amount_cd">Enter bill amount in dollar</string>
+    <string name="button_calculate_cd">Tap to calculate</string>
     <string name="login_button_cd">Login button</string>
     <string name="welcome_textview_cd">Welcome message</string>
     <string name="tip_calculated">Tip Amount: $</string>

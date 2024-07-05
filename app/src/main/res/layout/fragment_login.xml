@@ -4,11 +4,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-<<<<<<< HEAD
         android:id="@+id/linearLayoutLogin"
-=======
-        android:id="@+id/linearLayout"
->>>>>>> origin/counter_branch
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
