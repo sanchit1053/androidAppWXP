@@ -14,7 +14,6 @@ import androidx.fragment.app.FragmentTransaction;
 public class MainActivity extends AppCompatActivity {
 
     Button Button1, Button2, Button3, Button4;
-    LoginFragment loginFragment;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -50,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener((view) -> loadFragmentToBackStack(R.id.frameLayout, fragment));
     }
 
-    public void successfulLogin() {
-        removeFragment(loginFragment);
-    }
+//    public void successfulLogin() {
+//        removeFragment(loginFragment);
+//    }
 
     public void removeFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();

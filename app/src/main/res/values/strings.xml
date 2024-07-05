@@ -26,5 +26,8 @@
     <string name="application_name">WPX 2.0</string>
 
 
+    <string name="username_edittext_cd">Enter username</string>
+    <string name="password_edittext_cd">Enter password</string>
+    <string name="login_button_cd">Tap to login</string>
 
 </resources>
