@@ -1,7 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/timerFragment"
@@ -20,14 +21,16 @@
             android:layout_margin="20dp"
             android:orientation="vertical">
 
-            <TextView
+            <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="166dp"
                 android:gravity="center_horizontal"
                 android:text="@string/application_name"
                 android:textColor="@color/design_default_color_primary"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:srcCompat="@mipmap/ic_banner_foreground" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -38,7 +41,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="116dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -88,6 +91,8 @@
                         android:text="@string/Unit_convertor" />
 
                 </LinearLayout>
+
+
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>
