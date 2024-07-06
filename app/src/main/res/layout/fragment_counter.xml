@@ -4,8 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/white"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    style="@style/SCREEN">
 
     <TextView
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:fontFamily="sans-serif-condensed"
             android:gravity="center"
             android:text="@string/defaultMsg"
-            android:textColor="#2196F3"
+            style="@style/TEXT"
             android:textSize="25sp" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:fontFamily="sans-serif-condensed"
             android:gravity="center"
             android:text="@string/zero"
-            android:textColor="#2196F3"
+            style="@style/TEXT"
             android:textSize="25sp" />
 
     </LinearLayout>
@@ -74,20 +74,24 @@
             android:layout_height="wrap_content"
             android:text="@string/increase"
             android:layout_weight="1"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            style="@style/BUTTON"/>
 
         <Button
             android:id="@+id/buttonDecrease"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/decrease"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            style="@style/BUTTON"/>
     </LinearLayout>
+
 
     <Button
         android:id="@+id/buttonReset"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Reset" />
+        android:text="Reset"
+        style="@style/BUTTON"/>
 
 </LinearLayout>

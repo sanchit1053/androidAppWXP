@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.content.Context;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -23,8 +24,9 @@ public class Counter extends Fragment {
     private Button decreaseButton;
     private Button resetButton;
     private int count = 0;
-    TextInputLayout textInputLayout;
-    EditText textInputEditText;
+    private static final String COUNT_KEY = "count_key";
+    private TextInputLayout textInputLayout;
+    private EditText textInputEditText;
 
 
     @Override
@@ -83,7 +85,27 @@ public class Counter extends Fragment {
             }
         });
 
+        if (savedInstanceState != null) {
+            count = savedInstanceState.getInt(COUNT_KEY, 0);
+            textArea.setText(String.valueOf(count));
+        }
+
         return view;
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(COUNT_KEY, count);
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (savedInstanceState != null) {
+            count = savedInstanceState.getInt(COUNT_KEY, 0);
+            textArea.setText(String.valueOf(count));
+        }
     }
 
 

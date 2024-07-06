@@ -1,28 +1,72 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
-    <FrameLayout
-        android:id="@+id/timerFragment"
+    <!-- Action Bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="#4464D5"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:text="@string/j2a"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/permanentmarker"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:letterSpacing="0.12"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <FrameLayout
+            android:id="@+id/timerFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/switchBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Container to hold the fragments -->
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        style="@style/SCREEN">
 
         <LinearLayout
             android:id="@+id/innerLayer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="166dp"
                 app:srcCompat="@mipmap/ic_banner_foreground" />
@@ -33,13 +77,11 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="116dp"
                     android:gravity="center"
                     android:orientation="horizontal">
-
 
                     <Button
                         android:id="@+id/ButtonApplication1"
@@ -47,8 +89,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-
-                        android:text="Application 1" />
+                        android:text="Application 1"
+                        style="@style/BUTTON"/>
 
                     <Button
                         android:id="@+id/ButtonApplication2"
@@ -56,8 +98,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-
-                        android:text="Application 2" />
+                        android:text="Application 2"
+                        style="@style/BUTTON"/>
 
                 </LinearLayout>
 
@@ -73,7 +115,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-
+                        style="@style/BUTTON"
                         android:text="Application 3" />
 
                     <Button
@@ -82,7 +124,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-
+                        style="@style/BUTTON"
                         android:text="Application 4" />
 
                 </LinearLayout>

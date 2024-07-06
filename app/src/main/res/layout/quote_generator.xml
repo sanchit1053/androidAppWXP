@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#8BE0ED"
-    android:padding="16dp">
+    android:padding="16dp"
+    style="@style/SCREEN">
 
     <TextView
         android:id="@+id/title"
@@ -15,7 +15,8 @@
         android:text="QUOTE GENERATOR"
         android:textAlignment="center"
         android:textSize="40sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        style="@style/TEXT"/>
 
     <TextView
         android:id="@+id/sampleText"
@@ -27,7 +28,8 @@
         android:text="Click the button below to generate a random quote"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        style="@style/TEXT"/>
 
     <Button
         android:id="@+id/myButton"
@@ -37,7 +39,8 @@
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Generate Quote" />
+        android:text="Generate Quote"
+        style="@style/BUTTON"/>
 
     <TextView
         android:id="@+id/myquote"
@@ -46,7 +49,7 @@
         android:layout_below="@id/myButton"
         android:layout_marginTop="50dp"
         android:textAlignment="center"
-        android:textColor="#FF1100"
+        style="@style/TEXT"
         android:textSize="30sp"
         android:textStyle="bold" />
 

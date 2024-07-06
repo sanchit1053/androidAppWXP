@@ -2,10 +2,11 @@
 <!-- fragment_main.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    style="@style/SCREEN"
+    >
 
     <EditText
         android:id="@+id/editTextBillAmount"
@@ -13,7 +14,8 @@
         android:layout_height="wrap_content"
         android:hint="Enter Bill Amount"
         android:inputType="numberDecimal"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp"
+        style="@style/TEXT"/>
 
 
     <TextView
@@ -22,7 +24,8 @@
         android:text="Select Tip Percentage:"
         android:textSize="18sp"
         android:gravity="center"
-        android:paddingTop="16dp"/>
+        android:paddingTop="16dp"
+        style="@style/TEXT"/>
 
     <RadioGroup
         android:id="@+id/radioGroupTipPercentage"
@@ -64,13 +67,15 @@
         android:hint="Enter custom tip %"
         android:inputType="numberDecimal"
         android:visibility="gone"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        style="@style/TEXT"/>
 
     <Button
         android:id="@+id/buttonCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate" />
+        android:text="Calculate"
+        style="@style/BUTTON"/>
 
     <TextView
         android:id="@+id/textViewTipAmount"
@@ -79,6 +84,7 @@
         android:text="Tip Amount: $0.00"
         android:textSize="18sp"
         android:gravity="center"
+        style="@style/TEXT"
         android:paddingTop="16dp"/>
 
     <TextView
@@ -87,6 +93,7 @@
         android:layout_height="wrap_content"
         android:text="Total Amount: $0.00"
         android:textSize="18sp"
+        style="@style/TEXT"
         android:gravity="center"
         android:paddingTop="8dp"/>
 

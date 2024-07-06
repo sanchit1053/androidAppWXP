@@ -6,4 +6,19 @@
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+    <!-- Light Mode colors -->
+    <style name="SCREEN">
+        <item name="android:background">#FFF</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">#181818</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="android:backgroundTint">#A352FF</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
 </resources>
