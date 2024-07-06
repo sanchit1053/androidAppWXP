@@ -22,8 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
-        android:layout_marginTop="250dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="30dp"
         android:text="@string/quote_gen_desc"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -36,19 +36,26 @@
         android:layout_below="@+id/sampleText"
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="@string/quote_gen_command" />
-
-    <TextView
-        android:id="@+id/myquote"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/myButton"
-        android:layout_marginTop="50dp"
-        android:textAlignment="center"
-        android:textColor="#FF1100"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/merriweatherblack"/>
+        android:layout_height="match_parent"
+        android:id="@+id/story">
+        <TextView
+            android:id="@+id/myquote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myButton"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:clickable="true"
+            android:layout_marginTop="500dp"
+            android:textAlignment="center"
+            android:textColor="#FF1100"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/merriweatherblack"/>
+    </FrameLayout>
 
 </RelativeLayout>

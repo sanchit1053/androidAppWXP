@@ -49,8 +49,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-
-                        android:text="@string/tip_calculator" />
+                        android:text="@string/tip_calculator"
+                        android:backgroundTint="#A352FF"/>
 
                     <Button
                         android:id="@+id/ButtonApplication2"
@@ -58,7 +58,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-
                         android:text="@string/quote_gen" />
 
                 </LinearLayout>
