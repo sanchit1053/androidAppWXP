@@ -27,7 +27,8 @@
         android:text="@string/quote_gen_desc"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:importantForAccessibility="yes"/>
 
     <Button
         android:id="@+id/myButton"
@@ -37,7 +38,8 @@
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="@string/quote_gen_command" />
+        android:text="@string/quote_gen_command"
+        android:importantForAccessibility="yes"/>
 
     <TextView
         android:id="@+id/myquote"

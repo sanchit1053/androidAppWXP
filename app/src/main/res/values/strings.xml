@@ -4,7 +4,7 @@
     <string name="password_edittext_cd">Enter password</string>
     <string name="bill_amount_cd">Enter bill amount in dollar</string>
     <string name="button_calculate_cd">Tap to calculate</string>
-    <string name="login_button_cd">Login button</string>
+    <string name="login_button_cd">Tap to login</string>
     <string name="welcome_textview_cd">Welcome message</string>
     <string name="tip_calculated">Tip Amount: $</string>
     <string name="bill_calculated">Total Bill Amount: $</string>
@@ -26,17 +26,27 @@
     <string name="Counter">Counter</string>
     <string name="Unit_convertor">Unit Convertor</string>
     <string name="application_name">WPX 2.0</string>
+    <string name="button_generate_quote_cd">Generate a random quote</string>
+    <string name="sample_text_cd">Instructions: Click the button below to generate a random quote</string>
+    <string name="sample_text_announcement">Click the button below to generate a random quote</string>
+    <string name="generated_quote_announcement">Generated quote: %s</string>
+    <!-- Counter app strings -->
+    <string name="counter">Counter</string>
+    <string name="defaultMsg">Current value of counter: </string>
+    <string name="default_message">Current value of counter: </string>
+    <string name="one">1</string>
+    <string name="increase">Increase the counter</string>
+    <string name="decrease">Decrease the counter</string>
+    <string name="reset">Reset the counter</string>
+    <string name="enter_value">Enter the value</string>
+
+
 
 
 
     <string name="invalid_username">Invalid username or password</string>
     <string name="welcome">Welcome</string>
-    <!-- Counter app strings -->
-    <string name="defaultMsg">Current value of counter: </string>
-    <string name="increase">Increase</string>
-    <string name="decrease">Decrease</string>
-    <string name="counter">Counter</string>
-    <string name="zero">0</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

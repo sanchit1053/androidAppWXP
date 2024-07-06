@@ -45,6 +45,14 @@ public class Counter extends Fragment {
         textInputEditText = textInputLayout.getEditText();
 
 
+        // Set content descriptions for buttons
+        incrementButton.setContentDescription(getString(R.string.increase));
+        decreaseButton.setContentDescription(getString(R.string.decrease));
+        resetButton.setContentDescription(getString(R.string.reset));
+
+        // Set initial text for accessibility
+        textArea.announceForAccessibility(getString(R.string.default_message) + " " + count);
+
         // Set click listeners for buttons
         incrementButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +64,7 @@ public class Counter extends Fragment {
                 int x = getInputValue();
                 count += x;
                 textArea.setText(String.format(String.valueOf(count)));
-
+                updateCounter();
             }
         });
 
@@ -70,6 +78,7 @@ public class Counter extends Fragment {
                 int x = getInputValue();
                 count -= x;
                 textArea.setText(String.format(String.valueOf(count)));
+                updateCounter();
             }
         });
 
@@ -80,12 +89,17 @@ public class Counter extends Fragment {
                 count = 0;
                 textInputEditText.setText("1");
                 textArea.setText("Start again!");
+                updateCounter();
             }
         });
 
         return view;
     }
-
+    // Method to update counter text and announce for accessibility
+    private void updateCounter() {
+        textArea.setText(String.valueOf(count));
+        textArea.announceForAccessibility(getString(R.string.default_message) + " " + count);
+    }
 
     // Method to get the input value from the EditText, defaulting to 1 if empty
     private int getInputValue(){

@@ -40,6 +40,14 @@ public class QuoteGenerator extends Fragment {
 
         Button button = v.findViewById(R.id.myButton);
         TextView quote = v.findViewById(R.id.myquote);
+        TextView sampleText = v.findViewById(R.id.sampleText);
+
+        // Set content descriptions for accessibility
+        button.setContentDescription(getString(R.string.button_generate_quote_cd));
+        sampleText.setContentDescription(getString(R.string.sample_text_cd));
+
+        // Provide initial announcement for accessibility
+        sampleText.announceForAccessibility(getString(R.string.sample_text_announcement));
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
