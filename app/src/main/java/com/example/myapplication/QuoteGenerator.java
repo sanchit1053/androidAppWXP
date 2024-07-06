@@ -4,12 +4,14 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.speech.tts.TextToSpeech;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Locale;
 import java.util.Random;
 
 public class QuoteGenerator extends Fragment {
@@ -31,6 +33,7 @@ public class QuoteGenerator extends Fragment {
             "Live as if you were to die tomorrow. Learn as if you were to live forever.",
     };
 
+    private TextToSpeech sp; // Declare TextToSpeech object as a class variable
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -50,6 +53,21 @@ public class QuoteGenerator extends Fragment {
                     index = random.nextInt(quotes.length);
                 } while (quotes[index] == null || quotes[index].isEmpty());
                 quote.setText(quotes[index]);
+            }
+        });
+        sp=new TextToSpeech(getActivity().getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status != TextToSpeech.ERROR) {
+                    sp.setLanguage(Locale.UK);
+                }
+            }
+        });
+        quote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String toSpeak = quote.getText().toString();
+                sp.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
         return v;
