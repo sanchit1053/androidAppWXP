@@ -2,9 +2,7 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.Layout;
 import android.text.TextWatcher;
-import android.text.style.BackgroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,10 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
+
 import androidx.annotation.ColorInt;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.util.Arrays;
@@ -106,6 +102,11 @@ public class UnitConverterFragment  extends Fragment {
         Spinner toSpinner = view.findViewById(R.id.toSpinner);
         TextView output = view.findViewById(R.id.resultTextView);
 
+        // Set initial content descriptions
+        editText.setContentDescription(getString(R.string.enter_a_number_hint));
+        fromSpinner.setContentDescription(getString(R.string.from_unit_spinner));
+        toSpinner.setContentDescription(getString(R.string.to_unit_spinner));
+
         editText.setText("1");
 
         // FROM https://www.geeksforgeeks.org/spinner-in-android-using-java-with-example/
@@ -126,7 +127,9 @@ public class UnitConverterFragment  extends Fragment {
         fromSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                output.setText(convert(editText.getText().toString(), fromSpinner.getSelectedItem().toString(), toSpinner.getSelectedItem().toString()));
+                String result = convert(editText.getText().toString(), fromSpinner.getSelectedItem().toString(), toSpinner.getSelectedItem().toString());
+                output.setText(result);
+                output.announceForAccessibility("Result is " + result);
             }
 
             @Override
@@ -137,7 +140,9 @@ public class UnitConverterFragment  extends Fragment {
         toSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                output.setText(convert(editText.getText().toString(), fromSpinner.getSelectedItem().toString(), toSpinner.getSelectedItem().toString()));
+                String result = convert(editText.getText().toString(), fromSpinner.getSelectedItem().toString(), toSpinner.getSelectedItem().toString());
+                output.setText(result);
+                output.announceForAccessibility("Result is " + result);
             }
 
             @Override
@@ -152,7 +157,9 @@ public class UnitConverterFragment  extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i0, int i2) {
-                output.setText(convert(editText.getText().toString(), fromSpinner.getSelectedItem().toString(), toSpinner.getSelectedItem().toString()));
+                String result = convert(editText.getText().toString(), fromSpinner.getSelectedItem().toString(), toSpinner.getSelectedItem().toString());
+                output.setText(result);
+                output.announceForAccessibility("Result is " + result);
             }
 
             @Override

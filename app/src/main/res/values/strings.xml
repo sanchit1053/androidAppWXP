@@ -39,6 +39,11 @@
     <string name="decrease">Decrease the counter</string>
     <string name="reset">Reset the counter</string>
     <string name="enter_value">Enter the value</string>
+    <!-- Unit converter strings -->
+    <string name="unit_converter_title">Unit Converter</string>
+    <string name="enter_a_number_hint">Enter a Number</string>
+    <string name="from_unit_spinner">Choose for the initial unit</string>
+    <string name="to_unit_spinner">Choose for the final unit</string>
 
 
 
