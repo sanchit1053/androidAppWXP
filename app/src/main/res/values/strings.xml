@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">J2A</string>
-    <string name="username_edittext_cd">Username field</string>
-    <string name="password_edittext_cd">Password field</string>
+    <string name="username_edittext_cd" translatable="false">Username field</string>
+    <string name="password_edittext_cd" translatable="false">Password field</string>
     <string name="login_button_cd">Login button</string>
     <string name="welcome_textview_cd">Welcome message</string>
     <string name="tip_calculated">Tip Amount: $</string>
@@ -30,13 +30,12 @@
     <string name="invalid_username">Invalid username or password</string>
     <string name="welcome">Welcome</string>
     <!-- Counter app strings -->
-    <string name="defaultMsg">Current value of counter: </string>
-    <string name="increase">Increase</string>
-    <string name="decrease">Decrease</string>
-    <string name="counter">Counter</string>
-    <string name="zero">0</string>
+    <string name="defaultMsg" translatable="false">Current value of counter: </string>
+    <string name="increase" translatable="false">Increase</string>
+    <string name="decrease" translatable="false">Decrease</string>
+    <string name="counter" translatable="false">Counter</string>
+    <string name="zero" translatable="false">0</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
 </resources>
