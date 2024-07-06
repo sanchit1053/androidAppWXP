@@ -1,7 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -17,20 +16,24 @@
             android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username" />
+            android:hint="Username"
+            android:importantForAccessibility="yes"/>
 
         <EditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:gravity="start"
+            android:textDirection="locale"/>
 
         <Button
             android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:text="Login"
+            android:importantForAccessibility="yes"/>
 
         <TextView
             android:id="@+id/textViewWelcome"
@@ -39,8 +42,7 @@
             android:gravity="center"
             android:text=""
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:visibility="gone" />
+            android:importantForAccessibility="yes"/>
 
     </LinearLayout>
 
@@ -57,3 +59,4 @@
         app:srcCompat="@mipmap/icon" />
 
 </RelativeLayout>
+

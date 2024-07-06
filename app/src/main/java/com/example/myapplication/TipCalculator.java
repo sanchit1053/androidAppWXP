@@ -114,7 +114,7 @@ public class TipCalculator extends Fragment {
 
         DecimalFormat df = new DecimalFormat("#.##"); // Format to two decimal places
 
-        textViewTipAmount.setText("Tip Amount: $" + df.format(tipAmount));
-        textViewTotalAmount.setText("Total Amount: $" + df.format(totalAmount));
+        textViewTipAmount.setText("Tip Amount: $ " + df.format(tipAmount));
+        textViewTotalAmount.setText("Tip Amount: $ "+ df.format(totalAmount));
     }
 }
