@@ -49,10 +49,6 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener((view) -> loadFragmentToBackStack(R.id.frameLayout, fragment));
     }
 
-//    public void successfulLogin() {
-//        removeFragment(loginFragment);
-//    }
-
     public void removeFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

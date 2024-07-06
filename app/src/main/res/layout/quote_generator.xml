@@ -1,8 +1,6 @@
-<!-- activity_main.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     android:background="#8BE0ED"
     android:padding="16dp">
 
@@ -10,6 +8,7 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
         android:text="@string/quote_gen"
@@ -21,9 +20,8 @@
         android:id="@+id/sampleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
-        android:layout_marginTop="250dp"
-        android:layout_marginBottom="50dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
         android:text="@string/quote_gen_desc"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -33,21 +31,35 @@
         android:id="@+id/myButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sampleText"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/sampleText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/quote_gen_command" />
 
-    <TextView
-        android:id="@+id/myquote"
+    <FrameLayout
+        android:id="@+id/fragmentContainerViewQuote"
+        android:name="com.example.myapplication.QuoteGenerator"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/myButton"
-        android:layout_marginTop="50dp"
-        android:textAlignment="center"
-        android:textColor="#FF1100"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/myquote"
+            android:layout_width="match_parent"
+            android:layout_height="279dp"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#FF1100"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
 
 </RelativeLayout>
+
