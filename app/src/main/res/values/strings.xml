@@ -14,9 +14,9 @@
     <string name="custom_tip_input">Enter custom tip %</string>
     <string name="calculate_button">Calculate</string>
     <string name="Total_amount">Total Amount: $0.00</string>
-    <string name="quote_gen">Quote Generator</string>
-    <string name="quote_gen_desc">Click the button below to generate a random quote</string>
-    <string name="quote_gen_command">Generate Quote</string>
+    <string name="quote_gen">Story Generator</string>
+    <string name="quote_gen_desc">Click the button below to generate a random story</string>
+    <string name="quote_gen_command">Generate Story</string>
     <string name="username" translatable="false">Username</string>
     <string name="password" translatable="false">Password</string>
     <string name="login">Login</string>
@@ -24,7 +24,6 @@
     <string name="Counter">Counter</string>
     <string name="Unit_convertor">Unit Convertor</string>
     <string name="application_name">WPX 2.0</string>
-
 
 
     <string name="invalid_username">Invalid username or password</string>
@@ -39,5 +38,74 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="j2a">J2A</string>
+    <string name="story1" translatable="false">
 
+    One summer’s day, in a field, a Grasshopper was hopping about, chirping and singing to its hearts content.
+    An Ant passed by, bearing along with great effort an ear of corn he was taking to his nest.
+    "Why don’t you come and chat with me," asked the Grasshopper, "instead of toiling your life away?"
+    "I am helping to store up food for the winter," said the Ant, "and I recommend you to do the same."
+    "Why bother about winter?" said the Grasshopper. "We have got plenty of food at present."
+    But the Ant went on its way and continued its toil. When winter came, the Grasshopper found itself
+    dying of hunger, while it saw the ants distributing, every day, corn and grain from the stores they
+    had collected in summer.
+    Then the Grasshopper knew....
+</string>
+    <string name="story2" translatable="false">
+
+    Once upon a time, there was a wise old man who lived in a small village. He was known throughout the land
+    for his wisdom and his ability to solve any problem that came his way. One day, a young man came to the wise
+    old man and said, “I have a problem. I have been wronged by someone and I want revenge. What should I do?” The wise
+    old man replied, “Before you seek revenge, you should ask yourself if it is worth it. Revenge may make you feel better in
+    the short term but it will not bring you true happiness.”The young man thought about this for a moment and then asked, “But what
+    if I don’t seek revenge? Won’t people think that I am weak?” The wise old man replied, “True strength comes from within.
+    It takes more courage to forgive than it does to seek revenge. If you can find it in your heart to forgive those who have
+    wronged you, you will find true happiness.”The young man thought about this for a moment and then thanked the wise old man
+    for his advice. He left the village feeling much better than he had before.
+    Moral: Forgiveness is a sign of true strength and courage. It takes more courage to forgive than it does to seek revenge.
+</string>
+    <string name="story3" translatable="false">
+
+    Once upon a time, an old man spread rumors that his neighbor was a thief. As a result, the young man was arrested. Days
+    later the young man was proven innocent. After being released, the man felt humiliated as he walked to his home. He sued
+    the old man for wrongly Accusing him. In court, the old man told the Judge, “They were just comments, didn’t Harm anyone..”
+    The judge, before passing sentence on the case, told the old man, “Write All the things you said about him on a piece of
+    paper. Cut them up and On the way home, throw the pieces of paper out. Tomorrow, come back to Hear the sentence”.
+    The next day, the judge told the old man, “Before receiving the Sentence, you will have to go out and gather all the pieces
+    of paper That you threw out yesterday”. The old man said, “I can’t do that! The wind must have spreads them and I won’t
+    Know where to find them”.The judge then replied, “The same way, simple comments may destroy the honor of a man to such
+    an extent that one is not able to fix it. The old man realized his mistake and asked for forgiveness”.
+    Moral: Do not malignant or blame anyone without knowing the fact or a truth. Your words may ruin someone’s reputation without any fault of theirs.
+</string>
+    <string name="story4" translatable="false">
+
+    Once Buddha was walking from one town to another town with a few of his followers. This was in the initial days. While
+    they were traveling, they happened to pass a lake. They stopped there and Buddha told one of his disciples, “I am
+    thirsty. Please get me some water from that lake there”. The disciple walked up to the lake. When he reached it,
+    he noticed that some people were washing clothes in the water and, right at that moment, a bullock cart started
+    crossing the lake right at the edge of it. As a result, the water became very muddy, very turbid. The disciple thought,
+    “How can I give this muddy water to Buddha to drink?!” So he came back and told the Buddha, “The water in there is very
+    muddy. I don’t think it is fit to drink”.So, the Buddha said, let us take a little rest here by the tree. After about
+    half an hour, again Buddha asked the same disciple to go back to the lake and get him some water to drink. The disciple
+    obediently went back to the lake. This time he found that the lake had absolutely clear water in it. The mud had settled
+    down and the water above it looked fit to be had. So he collected some water in a pot and brought it to the Buddha.
+    The Buddha looked at the water, and then he looked up at the disciple and said, “See, You let the water be and the mud
+    settled down on its own. You got a clear water. It didn’t require any effort”.
+    Moral: Your mind is also like that. When it is disturbed, just let it be. Give it a little time. It will settle down on its own. You don’t have to put in any effort to calm it down. We can judge and take best decisions of our life when we stay calm.
+</string>
+    <string name="story5" translatable="false">
+     A Wolf had been feasting too greedily, and a bone had stuck crosswise in his throat. He could get it neither up
+    nor down, and of course, he could not eat a thing. Naturally, that was an awful state of affairs for a greedy Wolf.
+    So away he hurried to the Crane. He was sure that she, with her long neck and bill, would easily be able to reach
+    the bone and pull it out. “I will reward you very handsomely”, said the Wolf, “if you pull that bone out for me”.
+    The Crane, as you can imagine, was very uneasy about putting her head in Wolf’s throat. But she was grasping in
+    nature, so she did what the Wolf asked her to do. When the Wolf felt that the bone was gone, he started to walk away.
+    “But what about my reward!” called the Crane anxiously.“What!” snarled the Wolf, whirling around. “Haven’t you got it?
+    Isn’t it enough that I let you take your head out of my mouth without snapping it off?”
+    Moral: Expect no reward for serving the one who has no honor. Staying in a company of selfish people will not do anyone any favor.
+</string>
+    <string name="title1"><b>The Ant and the Grasshopper</b></string>
+    <string name="title2">Seek a Revenge or give Forgiveness</string>
+    <string name="title3">Choose Your Words Wisely</string>
+    <string name="title4"><b>Sometimes Just let it be</b></string>
+    <string name="title5"><b>The Wolf and the Craney</b></string>
 </resources>

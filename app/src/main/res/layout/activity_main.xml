@@ -127,8 +127,6 @@
                         android:text="@string/Unit_convertor" />
 
                 </LinearLayout>
-
-
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>
