@@ -5,6 +5,8 @@
     android:orientation="vertical"
     android:gravity="center"
     android:scrollbars="vertical"
+    android:clickable="true"
+    android:focusable="true"
     style="@style/SCREEN">
 
     <TextView
