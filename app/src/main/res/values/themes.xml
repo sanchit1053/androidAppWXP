@@ -20,5 +20,4 @@
         <item name="android:backgroundTint">#A352FF</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
-
 </resources>
