@@ -29,6 +29,10 @@ public class Story_popUp extends Fragment {
     private TextToSpeech sp;
     boolean isSpeaking = false; // Flag to track speech state
 
+    public  Story_popUp(){
+
+    }
+
     public Story_popUp(int index) {
         i = index;
     }
