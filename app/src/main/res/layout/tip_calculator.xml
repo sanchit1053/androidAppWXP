@@ -1,33 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- fragment_main.xml -->
+<?xml version="1.0" encoding="utf-8"?><!-- fragment_main.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SCREEN"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:clickable="true"
     android:focusable="true"
-    style="@style/SCREEN"
-    >
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/editTextBillAmount"
+        style="@style/TEXT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/bill_calculated"
+        android:hint="@string/bill_amount"
+        android:importantForAccessibility="yes"
         android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        style="@style/TEXT"/>
 
+        android:minHeight="48dp" />
 
     <TextView
+        style="@style/TEXT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tip_percentage_selection"
-        android:textSize="18sp"
         android:gravity="center"
         android:paddingTop="16dp"
-        style="@style/TEXT"/>
+        android:text="@string/tip_percentage_selection"
+        android:textSize="18sp" />
 
     <RadioGroup
         android:id="@+id/radioGroupTipPercentage"
@@ -57,46 +56,49 @@
             android:id="@+id/radioButtonCustom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/custom_tip_input"
-            android:checked="true" />
+            android:checked="true"
+            android:text="@string/custom_tip_input" />
 
     </RadioGroup>
 
     <EditText
         android:id="@+id/editTextCustomTip"
+        style="@style/TEXT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/custom_tip_input"
         android:inputType="numberDecimal"
-        android:visibility="gone"
         android:textSize="18sp"
-        style="@style/TEXT"/>
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/buttonCalculate"
+        style="@style/BUTTON"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/calculate_button"
-        style="@style/BUTTON"/>
+        android:importantForAccessibility="yes"
+        android:text="@string/calculate_button" />
 
     <TextView
         android:id="@+id/textViewTipAmount"
+        style="@style/TEXT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tip_calculated"
-        android:textSize="18sp"
         android:gravity="center"
-        style="@style/TEXT"
-        android:paddingTop="16dp"/>
+        android:importantForAccessibility="yes"
+        android:paddingTop="16dp"
+        android:text="@string/tip_calculated"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textViewTotalAmount"
+        style="@style/TEXT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/bill_calculated"
-        android:textSize="18sp"
-        style="@style/TEXT"
         android:gravity="center"
-        android:paddingTop="8dp"/>
+        android:importantForAccessibility="yes"
+        android:paddingTop="8dp"
+        android:text="@string/bill_calculated"
+        android:textSize="18sp" />
 
 </LinearLayout>

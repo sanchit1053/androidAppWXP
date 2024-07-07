@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">J2A</string>
-    <string name="username_edittext_cd">Username field</string>
-    <string name="password_edittext_cd">Password field</string>
-    <string name="login_button_cd">Login button</string>
+    <string name="username_edittext_cd">Enter username</string>
+    <string name="password_edittext_cd">Enter password</string>
+    <string name="bill_amount_cd">Enter bill amount in dollar</string>
+    <string name="button_calculate_cd">Tap to calculate</string>
+    <string name="login_button_cd">Tap to login</string>
     <string name="welcome_textview_cd">Welcome message</string>
     <string name="tip_calculated">Tip Amount: $</string>
     <string name="bill_calculated">Total Bill Amount: $</string>
@@ -24,16 +26,31 @@
     <string name="Counter">Counter</string>
     <string name="Unit_convertor">Unit Convertor</string>
     <string name="application_name">WPX 2.0</string>
+    <string name="button_generate_quote_cd">Generate a random quote</string>
+    <string name="sample_text_cd">Instructions: Click the button below to generate a random quote</string>
+    <string name="sample_text_announcement">Click the button below to generate a random quote</string>
+    <string name="generated_quote_announcement">Generated quote: %s</string>
+    <!-- Counter app strings -->
+    <string name="counter">Counter</string>
+    <string name="defaultMsg">Current value of counter: </string>
+    <string name="default_message">Current value of counter: </string>
+    <string name="one">1</string>
+    <string name="increase">Increase the counter</string>
+    <string name="decrease">Decrease the counter</string>
+    <string name="reset">Reset the counter</string>
+    <string name="enter_value">Enter the value</string>
+    <!-- Unit converter strings -->
+    <string name="unit_converter_title">Unit Converter</string>
+    <string name="enter_a_number_hint">Enter a Number</string>
+    <string name="from_unit_spinner">Choose for the initial unit</string>
+    <string name="to_unit_spinner">Choose for the final unit</string>
+
+
 
 
     <string name="invalid_username">Invalid username or password</string>
     <string name="welcome">Welcome</string>
-    <!-- Counter app strings -->
-    <string name="defaultMsg">Current value of counter: </string>
-    <string name="increase">Increase</string>
-    <string name="decrease">Decrease</string>
-    <string name="counter">Counter</string>
-    <string name="zero">0</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

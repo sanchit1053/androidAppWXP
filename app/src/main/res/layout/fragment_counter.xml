@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SCREEN"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:scrollbars="vertical"
     android:clickable="true"
     android:focusable="true"
-    style="@style/SCREEN">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
+        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:text="@string/counter"
-        android:fontFamily="sans-serif-condensed"
         android:textColor="#416BD2"
         android:textSize="60sp" />
 
@@ -26,23 +26,23 @@
 
         <TextView
             android:id="@+id/counterText"
+            style="@style/TEXT"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center"
             android:text="@string/defaultMsg"
-            style="@style/TEXT"
             android:textSize="25sp" />
 
         <TextView
             android:id="@+id/counterValue"
+            style="@style/TEXT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center"
-            android:text="@string/zero"
-            style="@style/TEXT"
+            android:text="@string/one"
             android:textSize="25sp" />
 
     </LinearLayout>
@@ -51,7 +51,8 @@
         android:id="@+id/textInputLayout"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp">
+        android:layout_marginBottom="50dp"
+        android:hint="@string/enter_value">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textInputEditText"
@@ -59,41 +60,43 @@
             android:layout_height="match_parent"
             android:hint="Enter Value"
             android:inputType="number"
-            android:text="1"/>
+            android:text="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_margin="5dp"
-        >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/buttonIncrease"
+            style="@style/BUTTON"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/increase"
-            android:layout_weight="1"
             android:layout_marginRight="10dp"
-            style="@style/BUTTON"/>
+            android:layout_weight="1"
+            android:contentDescription="@string/increase"
+            android:text="Increase" />
 
         <Button
             android:id="@+id/buttonDecrease"
+            style="@style/BUTTON"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/decrease"
             android:layout_weight="1"
-            style="@style/BUTTON"/>
+            android:contentDescription="@string/decrease"
+            android:text="@string/decrease" />
     </LinearLayout>
 
 
     <Button
         android:id="@+id/buttonReset"
+        style="@style/BUTTON"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Reset"
-        style="@style/BUTTON"/>
+        android:contentDescription="@string/reset"
+        android:text="Reset" />
 
 </LinearLayout>
