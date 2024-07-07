@@ -64,6 +64,7 @@ public class QuoteGenerator extends Fragment {
             public void onClick(View view) {
                 FragmentManager fr = getActivity().getSupportFragmentManager();
                 FragmentTransaction fmt = fr.beginTransaction();
+                fmt.setCustomAnimations(R.anim.slide_up, 0, 0,R.anim.slide_up); // slide_down can be a reverse animation
                 fmt.add(R.id.story,new Story_popUp(index));
                 fmt.addToBackStack(null);
                 fmt.commit();
