@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         addFragmentToClickListener(Button1, new TipCalculator());
         addFragmentToClickListener(Button2, new QuoteGenerator());
         addFragmentToClickListener(Button3, new Counter());
-        addFragmentToClickListener(Button4, new UnitConverterFragment(Color.parseColor("#dddddd")));
+        addFragmentToClickListener(Button4, new UnitConverterFragment());
 
         switcher.setOnClickListener(new View.OnClickListener() {
             @Override

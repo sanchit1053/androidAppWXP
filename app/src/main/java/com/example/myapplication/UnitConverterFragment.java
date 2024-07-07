@@ -9,11 +9,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.annotation.ColorInt;
 import androidx.fragment.app.Fragment;
 
 import java.util.Arrays;
@@ -23,11 +21,9 @@ import java.util.stream.Collectors;
 
 public class UnitConverterFragment  extends Fragment {
 
-    @ColorInt int backGroundColor;
 
-    public UnitConverterFragment(@ColorInt int backGroundColor){
+    public UnitConverterFragment(){
         super(R.layout.unit_converter_fragment);
-        this.backGroundColor = backGroundColor;
     }
 
     private enum UnitType {
@@ -93,8 +89,6 @@ public class UnitConverterFragment  extends Fragment {
 
         List<String> unit_names = units.stream().map(Unit::getName).collect(Collectors.toList());
 
-        LinearLayout linearLayout = view.findViewById(R.id.topLayout);
-        linearLayout.setBackgroundColor(this.backGroundColor);
 
         EditText editText = view.findViewById(R.id.textInput);
         Spinner fromSpinner = view.findViewById(R.id.fromSpinner);
