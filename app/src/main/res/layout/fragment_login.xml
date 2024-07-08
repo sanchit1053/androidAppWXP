@@ -17,7 +17,7 @@
             android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="@string/username"
             android:importantForAccessibility="yes"/>
 
         <EditText
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:gravity="start"
+            android:textAlignment="viewStart"
             android:textDirection="locale"/>
 
         <Button

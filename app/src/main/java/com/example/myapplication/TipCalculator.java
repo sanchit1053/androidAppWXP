@@ -83,10 +83,10 @@ public class TipCalculator extends Fragment {
                     editTextCustomTip.setVisibility(View.GONE);// Hide EditText
 
                 } else if (checkedId == R.id.radioButton15) {
-                    tipPercentage = 15.0;
+                    tipPercentage = 20.0;
                     editTextCustomTip.setVisibility(View.GONE); // Hide EditText
                 } else if (checkedId == R.id.radioButton20) {
-                    tipPercentage = 20.0;
+                    tipPercentage = 30.0;
                     editTextCustomTip.setVisibility(View.GONE); // Hide EditText
                 } else if (checkedId == R.id.radioButtonCustom) {
                     editTextCustomTip.setVisibility(View.VISIBLE); // Show EditText for custom input
@@ -122,7 +122,12 @@ public class TipCalculator extends Fragment {
         DecimalFormat df = new DecimalFormat("#.##"); // Format to two decimal places
 
         textViewTipAmount.announceForAccessibility("Your tip amount is " + tipAmount + "dollar" + "Your total bill amount is " + totalAmount + "dollar");
-        textViewTipAmount.setText("Tip Amount: $ " + df.format(tipAmount));
-        textViewTotalAmount.setText("Total Bill Amount: $ "+ df.format(totalAmount));
+        String formattedTipAmount = df.format(tipAmount);
+        String tipCalc = getString(R.string.tip_calculated) + formattedTipAmount;
+        textViewTipAmount.setText(tipCalc);
+
+        String formattedBillAmount = df.format(totalAmount);
+        String billCalc = getString(R.string.bill_calculated) + formattedBillAmount;
+        textViewTotalAmount.setText(billCalc);
     }
 }
