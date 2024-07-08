@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.os.Handler;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -63,6 +65,13 @@ public class LoginActivity extends AppCompatActivity {
             textViewWelcome.announceForAccessibility("Invalid username or password. Please try again.");
             textViewWelcome.setTextColor(ContextCompat.getColor(this, R.color.colorRed));
             textViewWelcome.setVisibility(View.VISIBLE);
+            // Delay setting focus to editTextUsername after announcement
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    editTextUsername.requestFocus();
+                }
+            }, 5000); // Delay time in milliseconds
 
         }
     }
