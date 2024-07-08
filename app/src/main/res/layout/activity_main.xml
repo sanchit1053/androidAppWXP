@@ -74,59 +74,42 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="116dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-
-                    <Button
-                        android:id="@+id/ButtonApplication1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:text="@string/tip_calculator"
-                        style="@style/BUTTON"/>
-
-                    <Button
-                        android:id="@+id/ButtonApplication2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:text="@string/quote_gen"
-                        style="@style/BUTTON"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/ButtonApplication1"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/tip_calculator"
+                    style="@style/BUTTON"/>
 
-                    <Button
-                        android:id="@+id/ButtonApplication3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        style="@style/BUTTON"
-                        android:text="@string/counter" />
+                <Button
+                    android:id="@+id/ButtonApplication2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/quote_gen"
+                    style="@style/BUTTON"/>
 
-                    <Button
-                        android:id="@+id/ButtonApplication4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        style="@style/BUTTON"
-                        android:text="@string/Unit_convertor" />
+                <Button
+                    android:id="@+id/ButtonApplication3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    style="@style/BUTTON"
+                    android:text="@string/counter" />
 
-                </LinearLayout>
+                <Button
+                    android:id="@+id/ButtonApplication4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    style="@style/BUTTON"
+                    android:text="@string/Unit_convertor" />
+
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>
