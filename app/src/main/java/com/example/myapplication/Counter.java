@@ -48,6 +48,7 @@ public class Counter extends Fragment {
 
 
         // Set content descriptions for buttons
+        textInputEditText.requestFocus();
         incrementButton.setContentDescription(getString(R.string.increase));
         decreaseButton.setContentDescription(getString(R.string.decrease));
         resetButton.setContentDescription(getString(R.string.reset));

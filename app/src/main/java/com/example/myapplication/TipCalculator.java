@@ -46,7 +46,7 @@ public class TipCalculator extends Fragment {
         editTextBillAmount.setContentDescription(getString(R.string.bill_amount_cd));
         buttonCalculate.setContentDescription(getString(R.string.button_calculate_cd));
         radioGroupTipPercentage.announceForAccessibility("Select any tip percentage");
-
+        editTextBillAmount.requestFocus();
 
 
         radioGroupTipPercentage.check(R.id.radioButton10);
@@ -81,15 +81,20 @@ public class TipCalculator extends Fragment {
                 if (checkedId == R.id.radioButton10) {
                     tipPercentage = 10.0;
                     editTextCustomTip.setVisibility(View.GONE);// Hide EditText
+                    editTextCustomTip.announceForAccessibility(tipPercentage + "is selected");
 
                 } else if (checkedId == R.id.radioButton15) {
                     tipPercentage = 20.0;
                     editTextCustomTip.setVisibility(View.GONE); // Hide EditText
+                    editTextCustomTip.announceForAccessibility(tipPercentage + "is selected");
+
                 } else if (checkedId == R.id.radioButton20) {
                     tipPercentage = 30.0;
                     editTextCustomTip.setVisibility(View.GONE); // Hide EditText
+                    editTextCustomTip.announceForAccessibility(tipPercentage + "is selected");
                 } else if (checkedId == R.id.radioButtonCustom) {
                     editTextCustomTip.setVisibility(View.VISIBLE); // Show EditText for custom input
+                    editTextCustomTip.announceForAccessibility(editTextCustomTip.getText() + "is selected");
                 } else {
                     tipPercentage = 0.0;
                     editTextCustomTip.setVisibility(View.GONE); // Hide EditText by default
