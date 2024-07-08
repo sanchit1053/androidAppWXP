@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         String username = editTextUsername.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
 
-        if (username.equals("admin") && password.equals("admin@123")) {
+        if((username.equals("ض") && password.equals("ض")) || (username.equals("admin") && password.equals("admin@123"))) {
             // Provide accessibility feedback
             textViewWelcome.announceForAccessibility("Login successful. Welcome, " + username);
 

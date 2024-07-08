@@ -3,21 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     android:layout_marginLeft="3dp"
-    android:layout_marginTop="20dp"
-    android:shape = "rectangle"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/rounded_background"
+    android:shape="rectangle"
+    android:visibility="visible"
     tools:context=".Story_popUp">
 
-
-    <!-- Top bar -->
-
-    <!-- ScrollView for scrollable content -->
     <LinearLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#6D6D6D"
+        style="@style/POPUP"
+        android:background="@drawable/rounded_background2"
         android:orientation="horizontal"
         android:padding="16dp">
 
@@ -25,9 +23,8 @@
             android:id="@+id/mic"
             android:layout_width="37dp"
             android:layout_height="33dp"
-            android:background="#6D6D6D"
             android:padding="16dp"
-            android:src="@mipmap/ic_speaker_foreground" />
+            android:src="@mipmap/ic_speaker" />
 
         <View
             android:layout_width="0dp"
@@ -39,9 +36,8 @@
             android:layout_width="32dp"
             android:layout_height="29dp"
             android:layout_gravity="end"
-            android:background="#6D6D6D"
             android:padding="8dp"
-            android:src="@drawable/ic_close_foreground" />
+            android:src="@mipmap/ic_close" />
 
 
     </LinearLayout>
@@ -55,29 +51,35 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            style="@style/POP_SCREEN">
 
             <!-- TextView for story content -->
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hello Blank Fragment"
                 android:gravity="center"
+                android:padding="16dp"
+                android:text="Hello Blank Fragment"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                android:padding="16dp" />
+                android:textColor="@color/black"/>
+
             <TextView
                 android:id="@+id/allstory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hello Blank Fragment"
                 android:gravity="start"
+                android:padding="16dp"
+                android:text="Hello Blank Fragment"
                 android:textSize="24sp"
-                android:padding="16dp" />
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
     </ScrollView>
 
 </RelativeLayout>
+
+<!--    android:background="#6D6D6D"-->

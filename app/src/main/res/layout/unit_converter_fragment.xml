@@ -17,19 +17,18 @@
         android:layout_width="wrap_content"
         android:layout_height="90dp"
         android:layout_marginVertical="50dp"
-        android:text="Unit Converter"
+        android:text="@string/Unit_convertor"
         android:textSize="50sp" />
 
     <!--        android:background="#eaff7b"-->
     <EditText
         android:id="@+id/textInput"
         style="@style/TEXT"
-        android:layout_width="match_parent"
+        android:layout_width="170dp"
         android:layout_height="90dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginVertical="10dp"
         android:autofillHints="@string/enter_a_number_hint"
-        android:background="#eaff7b"
         android:gravity="center"
         android:inputType="number"
         android:minWidth="50dp"
@@ -39,28 +38,26 @@
 
     <Spinner
         android:id="@+id/fromSpinner"
-        android:layout_width="match_parent"
+        android:layout_width="170dp"
         android:layout_height="90dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginVertical="10dp"
-        android:background="#eeeeee"
         android:gravity="center"
         android:labelFor="@id/fromSpinner" />
 
     <Spinner
         android:id="@+id/toSpinner"
-        android:layout_width="match_parent"
+        android:layout_width="170dp"
         android:layout_height="90dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginVertical="10dp"
-        android:background="#eeeeee"
         android:gravity="center"
         android:labelFor="@id/toSpinner" />
 
     <TextView
         android:id="@+id/resultTextView"
         style="@style/TEXT"
-        android:layout_width="match_parent"
+        android:layout_width="170dp"
         android:layout_height="90dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp"

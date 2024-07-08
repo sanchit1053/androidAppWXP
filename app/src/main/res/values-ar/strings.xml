@@ -23,4 +23,7 @@
     <string name="application_name">رسالة ترحيب</string>
     <string name="invalid_username">توليد الاقتباس</string>
     <string name="welcome"> ترحيب</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">شعار</string>
+    <string name="counter">ض</string>
 </resources>
