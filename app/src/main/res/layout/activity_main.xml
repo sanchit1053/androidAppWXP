@@ -76,7 +76,7 @@
 
                 <Button
                     android:id="@+id/ButtonApplication1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
@@ -85,7 +85,7 @@
 
                 <Button
                     android:id="@+id/ButtonApplication2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
@@ -94,7 +94,7 @@
 
                 <Button
                     android:id="@+id/ButtonApplication3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
@@ -103,7 +103,7 @@
 
                 <Button
                     android:id="@+id/ButtonApplication4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
