@@ -35,9 +35,10 @@
             android:gravity="start"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:textDirection="locale"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="9dp" />
+            tools:layout_editor_absoluteX="9dp"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"/>
 
         <Button
             android:id="@+id/buttonLogin"
