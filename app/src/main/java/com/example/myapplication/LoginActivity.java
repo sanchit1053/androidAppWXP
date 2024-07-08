@@ -63,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
             textViewWelcome.announceForAccessibility("Invalid username or password. Please try again.");
             textViewWelcome.setTextColor(ContextCompat.getColor(this, R.color.colorRed));
             textViewWelcome.setVisibility(View.VISIBLE);
+
         }
     }
 }

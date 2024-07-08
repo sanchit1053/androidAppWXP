@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="@string/decrease"
-            android:text="@string/decrease" />
+            android:text="Decrease" />
     </LinearLayout>
 
 
