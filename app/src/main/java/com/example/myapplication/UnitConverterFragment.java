@@ -96,6 +96,7 @@ public class UnitConverterFragment  extends Fragment {
         TextView output = view.findViewById(R.id.resultTextView);
 
         // Set initial content descriptions
+        editText.requestFocus();
         editText.setContentDescription(getString(R.string.enter_a_number_hint));
         fromSpinner.setContentDescription(getString(R.string.from_unit_spinner));
         toSpinner.setContentDescription(getString(R.string.to_unit_spinner));

@@ -41,6 +41,7 @@ public class QuoteGenerator extends Fragment {
         TextView sampleText = v.findViewById(R.id.sampleText);
 
         // Set content descriptions for accessibility
+        sampleText.requestFocus();
         button.setContentDescription(getString(R.string.button_generate_quote_cd));
         sampleText.setContentDescription(getString(R.string.sample_text_cd));
 
