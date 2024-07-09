@@ -15,8 +15,8 @@
         android:id="@+id/titleBar"
         style="@style/TEXT"
         android:layout_width="wrap_content"
-        android:layout_height="90dp"
-        android:layout_marginVertical="50dp"
+        android:layout_height="70dp"
+        android:layout_marginVertical="30dp"
         android:text="@string/Unit_convertor"
         android:textSize="50sp" />
 
@@ -25,11 +25,13 @@
         android:id="@+id/textInput"
         style="@style/TEXT"
         android:layout_width="170dp"
-        android:layout_height="90dp"
+        android:layout_height="50dp"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginVertical="10dp"
+        android:layout_marginVertical="0dp"
+        android:layout_marginBottom="10dp"
         android:autofillHints="@string/enter_a_number_hint"
         android:gravity="center"
+        android:hint="@string/unit_input"
         android:inputType="number"
         android:minWidth="50dp"
         android:padding="10dp"
@@ -39,18 +41,20 @@
     <Spinner
         android:id="@+id/fromSpinner"
         android:layout_width="170dp"
-        android:layout_height="90dp"
+        android:layout_height="50dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginVertical="10dp"
         android:gravity="center"
+        android:textSize="20sp"
         android:labelFor="@id/fromSpinner" />
 
     <Spinner
         android:id="@+id/toSpinner"
         android:layout_width="170dp"
-        android:layout_height="90dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginVertical="10dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:labelFor="@id/toSpinner" />
 
@@ -60,7 +64,6 @@
         android:layout_width="170dp"
         android:layout_height="90dp"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="20dp"
         android:gravity="center"
         android:labelFor="@id/resultTextView"
         android:minWidth="50dp"

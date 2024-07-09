@@ -71,15 +71,20 @@ public class Story_popUp extends Fragment {
                     sp.setLanguage(Locale.UK);
                     sp.setSpeechRate(0.8f);
                 }
+                else{
+                    Log.e("t2s", "ERROR ON INIT")   ;
+                }
             }
         });
+
         mic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (!isSpeaking) {
                     // Start speaking
+                    Log.i("s2t", "Start Talking");
                     String toSpeak = story.getText().toString();
-                    sp.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+                    sp.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null, null);
                     isSpeaking = true;
                 } else {
                     // Stop speaking
@@ -88,6 +93,7 @@ public class Story_popUp extends Fragment {
                 }
             }
         });
+
         closeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

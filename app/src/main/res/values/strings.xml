@@ -25,6 +25,7 @@
     <string name="tip_calculator">Tip Calculator</string>
     <string name="Counter">Counter</string>
     <string name="Unit_convertor">Unit Convertor</string>
+    <string name="unit_input">Input Value</string>
     <string name="application_name">WPX 2.0</string>
     <string name="button_generate_quote_cd" translatable="false">Generate a random story</string>
     <string name="sample_text_cd" translatable="false">Instructions: Click the button below to generate a random story</string>
@@ -44,8 +45,6 @@
     <string name="enter_a_number_hint" translatable="false">Enter a Number</string>
     <string name="from_unit_spinner" translatable="false">Choose for the initial unit</string>
     <string name="to_unit_spinner" translatable="false">Choose for the final unit</string>
-
-
 
 
     <string name="invalid_username">Invalid username or password</string>

@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="30dp"
         android:importantForAccessibility="yes"
         android:text="@string/quote_gen_desc"
@@ -41,7 +41,7 @@
         android:layout_below="@+id/sampleText"
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:text="@string/quote_gen_command" />
 
     <FrameLayout
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/myButton"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="300dp"
             android:clickable="true"
             android:ellipsize="end"
             android:fontFamily="@font/merriweatherblack"

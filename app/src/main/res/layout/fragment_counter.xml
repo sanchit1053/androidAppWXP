@@ -94,7 +94,6 @@
             android:text="Decrease" />
     </LinearLayout>
 
-
     <Button
         android:id="@+id/buttonReset"
         style="@style/BUTTON"

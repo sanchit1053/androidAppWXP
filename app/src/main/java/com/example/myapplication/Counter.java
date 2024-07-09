@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -27,13 +28,14 @@ public class Counter extends Fragment {
     private static final String COUNT_KEY = "count_key";
     private TextInputLayout textInputLayout;
     private EditText textInputEditText;
+    View view;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_counter, container, false);
+        view = inflater.inflate(R.layout.fragment_counter, container, false);
 
         // Initialize views
         textArea = view.findViewById(R.id.counterValue);
@@ -102,6 +104,7 @@ public class Counter extends Fragment {
 
         return view;
     }
+
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {

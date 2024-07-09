@@ -49,7 +49,6 @@ public class DigitalClockFragment extends Fragment {
             public void run() {
                 updateTime();
                 handler.postDelayed(this, 1000);
-                Log.i("Time", "run()");
             }
         };
         Log.i("DG", "onCreate()");
